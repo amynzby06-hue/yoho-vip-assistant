@@ -1,46 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
-    android:background="#1A1A1A"
-    android:gravity="center">
+    android:background="#1A1A1A">
 
-    <TextView
-        android:text="👑 مساعد يوهو VIP"
-        android:textColor="#FFD700"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="30dp" />
-
-    <Button
-        android:id="@+id/btn_select"
-        android:text="1. اختر صورة"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:background="#FFD700"
-        android:textColor="#000"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:padding="15dp" />
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
 
-    <Button
-        android:id="@+id/btn_save"
-        android:text="2. احفظ وارسل لـ يوهو"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFD700"
-        android:textColor="#000"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:padding="15dp" />
+        <!-- العنوان -->
+        <TextView
+            android:text="👑 مساعد يوهو VIP"
+            android:textColor="#FFD700"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
 
-    <TextView
-        android:text="النسخة 1.0 - آمن 100% ✓"
-        android:textColor="#AAA"
-        android:textSize="12sp"
-        android:layout_marginTop="50dp" />
+        <!-- معاينة الصورة -->
+        <ImageView
+            android:id="@+id/img_preview"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="#333333"
+            android:scaleType="centerInside"
+            android:layout_marginBottom="20dp" />
 
-</LinearLayout>
+        <!-- شريط التقدم -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <!-- حقل اسم المستخدم -->
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="أدخل اسمك (اختياري)"
+            android:textColorHint="#888"
+            android:textColor="#FFF"
+            android:background="#333333"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- زر اختيار الصورة -->
+        <Button
+            android:id="@+id/btn_select"
+            android:text="🖼️ 1. اختر صورة"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFD700"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <!-- زر الإطار الذهبي -->
+        <Button
+            android:id="@+id/btn_gold_frame"
+            android:text="✨ 2. إطار ذهبي ملكي"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#D4AF37"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <!-- زر الإطار الفضي -->
+        <Button
+            android:id="@+id/btn_silver_frame"
+            android:text="💎 2. إطار فضي فاخر"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#C0C0C0"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <!-- زر الحفظ والرفع -->
+        <Button
+            android:id="@+id/btn_save"
+            android:text="💾 3. اح��ظ الصورة"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FF6B6B"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp" />
+
+        <!-- معلومات -->
+        <TextView
+            android:text="النسخة 1.0 - آمن 100% ✓\nلا تحتاج حسابات أو بيانات"
+            android:textColor="#AAA"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>
