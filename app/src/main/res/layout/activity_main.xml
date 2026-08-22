@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#1A1A1A"
+    android:gravity="center">
+
+    <TextView
+        android:text="👑 مساعد يوهو VIP"
+        android:textColor="#FFD700"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/btn_select"
+        android:text="1. اختر صورة"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#FFD700"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:text="2. احفظ وارسل لـ يوهو"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD700"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="15dp" />
+
+    <TextView
+        android:text="النسخة 1.0 - آمن 100% ✓"
+        android:textColor="#AAA"
+        android:textSize="12sp"
+        android:layout_marginTop="50dp" />
+
+</LinearLayout>
